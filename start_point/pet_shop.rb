@@ -11,10 +11,10 @@ def total_cash(shop_total_cash)
 end
 
 # 3
-# def test_add_or_remove_cash__add()
-#   #
-#
-# end
+def add_or_remove_cash(total_cash, cash)
+  # Function to add or remove funds from total_cash
+  total_cash[:admin][:total_cash] += cash
+end
 
 # 7
 # def pets_by_breed(, breed)
