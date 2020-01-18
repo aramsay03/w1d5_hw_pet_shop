@@ -16,6 +16,11 @@ def add_or_remove_cash(total_cash, cash)
   total_cash[:admin][:total_cash] += cash
 end
 
+# 4
+def pets_sold(sold)
+  # Function is to return the number of pets sold.
+  return sold[:admin][:pets_sold]
+end
 # 7
 # def pets_by_breed(, breed)
 #   # Function is to count the number of pets by breed.
