@@ -21,6 +21,12 @@ def pets_sold(sold)
   # Function is to return the number of pets sold.
   return sold[:admin][:pets_sold]
 end
+
+# 5
+def increase_pets_sold(pet_shop, sale)
+  # Function is to increase the number of pets sold.
+  pet_shop[:admin][:pets_sold] += sale
+end
 # 7
 # def pets_by_breed(, breed)
 #   # Function is to count the number of pets by breed.
