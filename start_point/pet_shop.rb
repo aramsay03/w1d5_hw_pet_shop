@@ -27,24 +27,8 @@ def increase_pets_sold(pet_shop, sale)
   # Function is to increase the number of pets sold.
   pet_shop[:admin][:pets_sold] += sale
 end
-# 7
-# def pets_by_breed(, breed)
-#   # Function is to count the number of pets by breed.
-#   breeds_r_total = []
-#   for pet in breed
-#     if pet[:pets][:breed] == breed
-#       breeds_r_total.push(pet[:pet][:breed])
-#     end
-#   end
-#   return breeds_r_total
-# end
 
-# def find_friendless(people)
-#   friendless = []
-#   for person in people
-#     if person[:friends].length == 0
-#       friendless.push(person[:name])
-#     end
-#   end
-#   return friendless
-# end
+# 6
+def stock_count(pet_shop)
+  return pet_shop[:pets].count
+end
