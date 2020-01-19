@@ -126,3 +126,7 @@ def customer_cash(customer)
 end
 
 # 12
+def remove_customer_cash(customer, amount)
+  # Function is to remove a cash amount of a spacific customer.
+  customer[:cash] -= amount
+end
