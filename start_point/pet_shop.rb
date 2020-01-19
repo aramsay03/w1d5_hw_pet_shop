@@ -104,26 +104,17 @@ def find_pet_by_name(shop, pet_name)
 end
 
 # 9
-# def remove_pet_by_name(shop, pet_name)
-#   # Function is to remove pet by using its name.
-#   for name in shop[:pets]
-#   # p shop[:name].index(pet_name)
-#   #   if name[:name] == pet_name
-#   #     # Need to add something in here to remove pet.
-#
-#     p shop[:name].index(name[:name])
-#   #     p name[:name]
-#   #   end
-#   end
-#   p shop[:pets]
-# end
-
 def remove_pet_by_name(shop, pet_name)
+  # Function is to remove pet by using its name
   for name in shop[:pets]
     if name[:name] == pet_name
-      # p name[:name].index(pet_name)
       name[:name].delete!(pet_name)
     end
   end
-  # return
+end
+
+# 10
+def add_pet_to_stock(shop, new_pet)
+  # Function is to add a new pet to the shops stock.
+  shop[:pets].push(new_pet)
 end
