@@ -30,5 +30,26 @@ end
 
 # 6
 def stock_count(pet_shop)
+  # Function is to count pets in stock.
   return pet_shop[:pets].count
 end
+
+# 7
+def pets_by_breed(shop, breed)
+  # Search and count all pets by breed.
+  breeds_array = []
+  for pet in shop[:pets]
+    if breed == pet[:breed]
+      breeds_array.push(pet[:breed])
+    end
+  end
+  return breeds_array
+end
+
+# 8
+# def find_pet_by_name(shop, pet_name)
+#   for name in shop[:pets]
+#     pet_name == name[:name]
+#   end
+#   return name[:name]
+# end
