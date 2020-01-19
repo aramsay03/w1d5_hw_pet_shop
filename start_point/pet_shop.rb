@@ -47,9 +47,63 @@ def pets_by_breed(shop, breed)
 end
 
 # 8
-# def find_pet_by_name(shop, pet_name)
-#   for name in shop[:pets]
-#     pet_name == name[:name]
+# def find_pet_by_name(shop, name)
+#   pet_array = []
+#   for pet_name in shop[:pets]
+#     if name == pet_name[:name]
+#       pet_array.push(pet_name[:name])
+#     end
+#     p pet_array
+#     # return pet_array
 #   end
-#   return name[:name]
+#   p pet_array
+#   return name[:pets]
+# end
+
+# def find_pet_by_name(shop, pet_name)
+#   pet_array = []
+#   for name in shop[:pets]
+#     if pet_name == name[:name]
+#       pet_array.push(name[:name])
+#     end
+#     # p pet_array
+#     # return pet_array
+#   end
+#   return pet_array
+#   # return name[:pets]
+# end
+
+# def find_pet_by_name(shop, pet_name)
+#   pet_array = []
+#   for name in shop[:pets]
+#     shop[:name].index(pet_name)
+#     if pet_name == name[:name]
+#       pet_array.push(name[:name])
+#     # elsif
+#       # pet_array.push(name[:pets])
+#
+#     end
+#     # pet_array.push(name[:name])
+#     # p pet_array
+#
+#     # return pet_array
+#   end
+#   # return name[:pets]
+#   p pet_array
+#   return pet_array.index(pet_name.to_s)
+#
+# end
+
+def find_pet_by_name(shop, pet_name)
+  for name in shop[:pets]
+    if name[:name] == pet_name
+      return name
+    end
+  end
+  return
+end
+
+# 9
+# def remove_pet_by_name(shop, pet_name)
+#   #
 # end
