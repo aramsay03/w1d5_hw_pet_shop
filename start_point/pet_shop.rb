@@ -130,3 +130,15 @@ def remove_customer_cash(customer, amount)
   # Function is to remove a cash amount of a spacific customer.
   customer[:cash] -= amount
 end
+
+# 13
+def customer_pet_count(customer)
+  # Function is to count how many pets a specific customer has.
+  customer[:pets].length
+end
+
+# 14
+def add_pet_to_customer(customer, new_pet)
+  # Function is to add a new pet to a customers array.
+  customer[:pets].push(new_pet[:name])
+end
