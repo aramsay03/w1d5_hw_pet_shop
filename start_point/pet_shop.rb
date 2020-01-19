@@ -105,5 +105,25 @@ end
 
 # 9
 # def remove_pet_by_name(shop, pet_name)
-#   #
+#   # Function is to remove pet by using its name.
+#   for name in shop[:pets]
+#   # p shop[:name].index(pet_name)
+#   #   if name[:name] == pet_name
+#   #     # Need to add something in here to remove pet.
+#
+#     p shop[:name].index(name[:name])
+#   #     p name[:name]
+#   #   end
+#   end
+#   p shop[:pets]
 # end
+
+def remove_pet_by_name(shop, pet_name)
+  for name in shop[:pets]
+    if name[:name] == pet_name
+      # p name[:name].index(pet_name)
+      name[:name].delete!(pet_name)
+    end
+  end
+  # return
+end
