@@ -142,3 +142,15 @@ def add_pet_to_customer(customer, new_pet)
   # Function is to add a new pet to a customers array.
   customer[:pets].push(new_pet[:name])
 end
+
+# --- OPTIONAL ---
+
+# 14
+def customer_can_afford_pet(customer, new_pet)
+  # Function is to check if the customer can afford to buy the pet or not. Should output boolean (true or false).
+  if customer[:cash] >= new_pet[:price]
+    return true
+  else
+    return false
+  end
+end
