@@ -118,3 +118,11 @@ def add_pet_to_stock(shop, new_pet)
   # Function is to add a new pet to the shops stock.
   shop[:pets].push(new_pet)
 end
+
+# 11
+def customer_cash(customer)
+  # Function is to return the cash amount of a spacific customer.
+  return customer[:cash]
+end
+
+# 12
