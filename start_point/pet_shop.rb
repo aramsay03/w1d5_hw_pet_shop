@@ -145,12 +145,24 @@ end
 
 # --- OPTIONAL ---
 
-# 14
+# 15
 def customer_can_afford_pet(customer, new_pet)
   # Function is to check if the customer can afford to buy the pet or not. Should output boolean (true or false).
   if customer[:cash] >= new_pet[:price]
     return true
   else
     return false
+  end
+end
+
+# 16
+def sell_pet_to_customer(pet_shop, pet, customer)
+  #
+  if customer_can_afford_pet(customer, pet) && find_pet_by_name(pet)
+    remove_customer_cash(customer, pet_shop)
+    add_or_remove_cash(pet_shop, pet])
+    add_pet_to_customer(customer, pet)
+    remove_pet_by_name(pet_shop, pet)
+    increase_pets_sold(1)
   end
 end
